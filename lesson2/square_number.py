@@ -1,2 +1,2 @@
 number = input("Введіт число:")
-print(int(number) ** 2)
+print("Квадрат числа:", int(number) ** 2)

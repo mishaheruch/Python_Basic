@@ -1,4 +1,4 @@
-minutes = input("Enter minutes: ")
+minutes = input("Введіть кількість хвилин:")
 minutes = int(minutes)
 hours = minutes // 60
 remaining_minutes = minutes % 60
