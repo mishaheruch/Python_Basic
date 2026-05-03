@@ -1,6 +1,6 @@
-x = 24
-print(id(x))
-print(id(24))
+x = 1
 
-
-print(id(257))
+while x < 10:
+    print(x)
+    x += -100000000
+print("rt")
