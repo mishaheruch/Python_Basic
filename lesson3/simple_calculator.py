@@ -1,8 +1,6 @@
 yes = "y"
 
-while yes == "y" or yes == "Y" or yes == "yes" or yes == "Yes" or yes == "YES":
-
-    yes = ""
+while yes == "y" or yes == "yes":
 
     first_number = float(input("Введіт перше число : "))
     second_number = float(input("Введіт друге число : "))
@@ -27,3 +25,4 @@ while yes == "y" or yes == "Y" or yes == "yes" or yes == "Yes" or yes == "YES":
     print("Результат:", result)
 
     yes = input("Якщо ви хочите продовжити напишіть y, якщо ні то no: ")
+    yes = yes.lower()
