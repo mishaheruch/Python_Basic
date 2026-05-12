@@ -8,4 +8,4 @@ my_string = my_string.replace(" ", "")
 for x in string.punctuation:
     my_string = my_string.replace(x, "")
 
-print("#" + my_string[:140])
+print("#" + my_string[:139])
