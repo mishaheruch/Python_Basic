@@ -17,23 +17,23 @@
 import string
 import keyword
 
-z = "asserT"
+z = str(input())
 
 if z[0].isdigit():
     print("false")
     exit()
-
-y = z.islower
-
-if not z.isalpha():
+elif not z.count("_") != 1:
+    if not z.islower():
+        print("false")
+        exit()
+elif "__" in z:
     print("false")
     exit()
 
-if z in string.punctuation:
-    print("Please, use only letters and numbers")
-    exit()
-
-
-print(z)
-print(y)
-print(keyword.iskeyword)
+for char in string.punctuation:
+    if char == "_":
+        continue
+    elif char in z:
+        print("false")
+        exit()
+print(z not in keyword.kwlist)
