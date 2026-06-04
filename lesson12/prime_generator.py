@@ -1,6 +1,17 @@
+import math
+
+
+def prime_generator(end):
+    for nums in range(2, end + 1):
+        for i in range(2, int(math.sqrt(nums)) + 1):
+            if nums % i == 0:
+                break
+        else:
+            yield nums
+
+
 from inspect import isgenerator
 
-pass
 gen = prime_generator(1)
 assert isgenerator(gen) == True, "Test0"
 assert list(prime_generator(10)) == [2, 3, 5, 7], "Test1"
